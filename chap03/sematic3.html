@@ -13,6 +13,9 @@
     section { width: 70%; height: 70%; float : left; background: olivedrab;}
     aside {width: 15%; height: 70%; float: left;background: orange;}
     footer {width: 100%; height: 15%;clear: both; background: plum;}
+    iframe {
+    border: none; /* 테두리를 없애는 CSS 속성 */
+  }
 </style>
 <body>
     <header>
@@ -25,10 +28,10 @@
         <ul>
             <li><a target="top" href="https://ko/wikipedia/wiki/HTML"> HTML5 </a></li>
             <li>
-              <a target="middle" href="https://ko/wikipedia/wiki/CSS"> CSS3 </a>
+              <a target="middle" href='https://ko.wikipedia.org/wiki/CSS'> CSS3 </a>
             </li>
             <li>
-              <a target="bottom" href="https://namu.wiki/w/JavaScript">
+              <a target="bottom" href='https://ko.wikipedia.org/wiki/JAVASCRIPT'>
                 JAVASCRIPT
               </a>
             </li>
@@ -38,30 +41,32 @@
             <article>
                 <h2>HTML5</h2>
                 <P>HTML을이용하여 문서의 구조와 내용을 기술합니다.</P>
-                <iframe
+                <div><iframe
                     name="top"
                     width="90%"
-                    height="90"
-                ></iframe>
+                    height="100%"
+                    
+                ></iframe></div>
             </article>
             <article>
                 <h2>CSS3</h2>
                 <P>CSS을 이용하여 문서의 스타일을 기술합니다.</p>
                     <iframe
-                    name="middle"
+                    name="top"
                     width="90%"
-                    height="90"
+                    height="100%"
                 ></iframe>
             </article>
             <article>
             <h2>JAVASCRIPT</h2>
             <p>JAVASCRIPT을 이용하여 문서의 동작을 기술합니다. </p>
-            <iframe
-                    name="bottom"
-                    width="90%"
-                    height="90"
-                ></iframe>
+                <iframe
+                name="bottom"
+                width="90%"
+                height="100%"
+            ></iframe> 
         </article>
+       
         </section>
             <footer>
             <p>Author: <a href="mailto:hong@naver.com">hong@naver.com</a> </footer>
