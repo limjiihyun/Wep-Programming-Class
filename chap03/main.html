@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img src="../file/shop.png" width="50" height="50" />
+      <h1>Web shop Page</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="main.html">About</a></li>
+        <li><a href="main.html">News</a></li>
+        <li><a href="main.html">MyAccoutn</a></li>
+        <li><a href="main.html">Contacts</a></li>
+      </ul>
+    </nav>
+
+    <aside id="left">
+      <h4>카테고리</h4>
+      <ul>
+        <li><a target="ifame1" href="../chop04/computer.html">컴퓨터</a></li>
+        <li><a target="ifame1" href="../chop04/clothing.html">의류</a></li>
+        <li><a target="ifame1" href="../chop04/music.html">음악</a></li>
+        <li><a target="ifame1" href="../chop04/movie.html">영화</a></li>
+      </ul>
+    </aside>
+
+    <section id="main">
+      <article id="article1">
+        <iframe
+          name="iframe1"
+          src="../chap04/computer.html"
+          width="440"
+          height="300"
+          seamless
+        ></iframe>
+      </article>
+    </section>
+    <aside>
+      <div id="shopcart">
+        <h4>Shopping Cart</h4>
+        현재 쇼핑카트에 물품이 없습니다.<br />
+        <a href="../cha04/shopcart.html">쇼핑카트 보기</a>
+      </div>
+      <div id="login">
+        <h4>Log in</h4>
+        <form action="#">
+          아이디 <input type="text" /><br />
+          패스워드 <input type="password" /><br />
+          <input type="submit" value="로그인" />
+          <input type="reset" value="초기화" /><br />
+          <a href="../chap04/register.html" target="_blank" id="register"
+            >회원가입</a
+          >
+          <a href="#" id="forgot">비밀번호분실</a>
+        </form>
+      </div>
+    </aside>
+    <footer>Copyright (c) 2013 Web Shop</footer>
+  </body>
+</html>

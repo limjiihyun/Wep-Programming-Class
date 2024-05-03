@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>설문조사</title>
+  </head>
+  <body>
+    <header>
+      <h1>설문조사</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#personal_info">개인 정보</a></li>
+        <li><a href="#usage_habits">사용 습관</a></li>
+        <li><a href="#feedback">의견 및 피드백</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="personal_info">
+        <h2>개인 정보</h2>
+        <form>
+          <label for="name">이름:</label>
+          <input type="text" id="name" name="name" /><br /><br />
+
+          <label for="age">나이:</label>
+          <input type="number" id="age" name="age" /><br /><br />
+
+          <label for="gender">성별:</label>
+          <select id="gender" name="gender">
+            <option value="male">남성</option>
+            <option value="female">여성</option>
+            <option value="other">기타</option></select
+          ><br /><br />
+        </form>
+      </section>
+
+      <section id="usage_habits">
+        <h2>사용 습관</h2>
+        <form>
+          <label for="frequency">스마트폰 사용 빈도:</label>
+          <input type="radio" id="daily" name="frequency" value="daily" />
+          <label for="daily">매일</label>
+          <input type="radio" id="weekly" name="frequency" value="weekly" />
+          <label for="weekly">주당 몇 번</label>
+          <input
+            type="radio"
+            id="occasionally"
+            name="frequency"
+            value="occasionally"
+          />
+          <label for="occasionally">가끔</label><br /><br />
+
+          <label for="activities">주로 하는 활동:</label>
+          <input
+            type="checkbox"
+            id="social_media"
+            name="activities"
+            value="social_media"
+          />
+          <label for="social_media">소셜 미디어</label>
+          <input type="checkbox" id="gaming" name="activities" value="gaming" />
+          <label for="gaming">게임</label>
+          <input
+            type="checkbox"
+            id="browsing"
+            name="activities"
+            value="browsing"
+          />
+          <label for="browsing">웹 서핑</label><br /><br />
+        </form>
+      </section>
+
+      <section id="feedback">
+        <h2>의견 및 피드백</h2>
+        <form>
+          <label for="comment">기타 의견:</label><br />
+          <textarea id="comment" name="comment" rows="4" cols="50"></textarea
+          ><br /><br />
+
+          <input type="submit" value="제출" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 설문조사. 모든 권리 보유.</p>
+    </footer>
+  </body>
+</html>

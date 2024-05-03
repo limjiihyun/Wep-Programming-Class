@@ -3,23 +3,219 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title style="font-family: Gulim; text-align: center">
+      스마트폰 소개 웹페이지
+    </title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      header {
+        width: 100%;
+        height: 22%;
+        background: rgb(239, 199, 216);
+      }
+      nav {
+        width: 30%;
+        height: 78%;
+        margin-top: 4%;
+        float: left;
+        background: #cce5ff;
+        color: darkblue;
+        box-shadow: 2px 2px 5px rgb(92, 104, 141);
+      }
+      h2 {
+        text-shadow: 2px 2px 5px red;
+      }
+      section {
+        width: 70%;
+        height: 85%;
+        float: left;
+        background: rgb(252, 185, 213);
+      }
+      aside {
+        width: 15%;
+        height: 70%;
+        float: left;
+        background: rgb(206, 198, 154);
+      }
+      footer {
+        width: 100%;
+        height: 15%;
+        clear: both;
+        background: rgb(234, 105, 234);
+      }
+      h2,
+      a {
+        text-shadow: 2px 2px 5px red;
+      }
+      nav ul li a:hover {
+        color: orange;
+      }
+      section article:hover {
+        box-shadow: 2px 2px 5px gray;
+      }
+      footer p:hover {
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <article
-      style="
-        background-color: rgb(236, 221, 235);
-        margin: 5px;
-        border-radius: 16px;
-        padding: 1px;
-      "
-    >
-      <h2>안드로이드</h2>
-      <p>
-        안드로이드는 후대 전화를 비롯한 휴대용 장치를 위한 운영 체제와 미들웨어,
-        사용자 인터페이스 그리고 표준 응용 프로그램을 포함하고 있는 모바일 운영
-        체제이다.
-      </p>
-    </article>
+    <header>
+      <div style="padding: 1px">
+        <h1 style="text-align: center">스마트폰</h1>
+        <p>
+          스마트폰은 컴퓨터를 결합한 무선 휴대전화기이다. 인터넷 검색, 전자우편,
+          간단한 문서 편집, 카메라, 오디오 및 비디오 재생 등 PC의 기능을 거의
+          모두 갖추고 있다.
+        </p>
+        <audio
+          controls
+          style="display: flex; justify-content: center; margin: auto"
+        >
+          <source src="media/EmbraceableYou.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </header>
+    <nav>
+      <h2 style="font-family: md개성체; color: blue; font-size: 1.2em">목차</h2>
+      <ul>
+        <li>
+          <a href="../chap04/project1.html"> 역사 </a>
+        </li>
+        <li>
+          <a href="../chap04/project2.html"> 안드로이드 </a>
+        </li>
+        <li>
+          <a href="../chap04/project3.html"> 아이폰 </a>
+        </li>
+        <li>
+          <a href="../chap04/project4.html"> 샘플 </a>
+        </li>
+      </ul>
+      <div style="flex-direction: row">
+        <p for="phone">좋아하는 폰:</p>
+        <select id="phone" name="phone">
+          <option value="iphone">아이폰</option>
+          <option value="android">안드로이드</option>
+          <option value="others">기타</option>
+        </select>
+      </div>
+      <p>오늘 날짜:</p>
+      <input type="date" id="today" name="today" />
+    </nav>
+    <section>
+      <article
+        style="
+          background-color: rgb(236, 221, 235);
+          margin: 5px;
+          border-radius: 16px;
+          padding: 1px;
+        "
+      >
+        <a href="https://ko.wikipedia.org/wiki/스마트폰" target="_blank"
+          ><h2 style="text-shadow: 2px 2px 5px red">역사</h2></a
+        >
+        <p>
+          IBM사가 1992년에 설계하여 그 해에 미국 네비다 주의 라스베이거스에서
+          열린 킴택스에서 컨셉 제품으로 전시되었다.
+        </p>
+      </article>
+      <article
+        style="
+          background-color: rgb(236, 221, 235);
+          margin: 5px;
+          border-radius: 16px;
+          padding: 1px;
+        "
+      >
+        <a href="https://ko.wikipedia.org/wiki/안드로이드" target="_blank"
+          ><h2 style="text-shadow: 2px 2px 5px red">안드로이드</h2></a
+        >
+
+        <p>
+          안드로이드는 후대 전화를 비롯한 휴대용 장치를 위한 운영 체제와
+          미들웨어, 사용자 인터페이스 그리고 표준 응용 프로그램을 포함하고 있는
+          모바일 운영 체제이다.
+        </p>
+      </article>
+      <article
+        style="
+          background-color: rgb(236, 221, 235);
+          margin: 5px;
+          border-radius: 16px;
+          padding: 1px;
+        "
+      >
+        <a href="https://ko.wikipedia.org/wiki/아이폰" target="_blank"
+          ><h2 style="text-shadow: 2px 2px 5px red">아이폰</h2></a
+        >
+        <p>
+          아이폰은 2007년 1월 9일, 애플이 발표한 휴대 전화 시리즈이다. 미국
+          샌프란시스코에서의 역할도 2007에서 애플의 창업자 중 한명인 스티븐
+          잡스가 발표했다.
+        </p>
+      </article>
+      <article
+        style="
+          background-color: rgb(236, 221, 235);
+          margin: 5px;
+          border-radius: 16px;
+          padding: 1px;
+        "
+      >
+        <h2 style="text-shadow: 2px 2px 5px red">샘플</h2>
+        <p style="text-align: center">스마트폰샘플</p>
+        <table border="1">
+          <tr>
+            <th>갤럭시7</th>
+            <th>아이폰6</th>
+            <th>타이젠</th>
+            <th>윈도우폰</th>
+            <th>노키아폰</th>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://ko.wikipedia.org/wiki/갤럭시" target="_blank"
+                ><img src="../file/galaxys7.png" width="100" height="200"
+              /></a>
+            </td>
+            <td>
+              <a href="https://ko.wikipedia.org/wiki/아이폰" target="_blank"
+                ><img src="../file/iphone6.png" width="100" height="200"
+              /></a>
+            </td>
+            <td>
+              <a href="https://ko.wikipedia.org/wiki/타이젠" target="_blank"
+                ><img src="../file/tizen.png" width="100" height="200"
+              /></a>
+            </td>
+            <td>
+              <a href="https://ko.wikipedia.org/wiki/윈도우폰" target="_blank"
+                ><img src="../file/windowphone.png" width="100" height="200"
+              /></a>
+            </td>
+            <td>
+              <a href="https://ko.wikipedia.org/wiki/노키아폰" target="_blank"
+                ><img src="../file/nokia.png" width="100" height="200"
+              /></a>
+            </td>
+          </tr>
+        </table>
+      </article>
+    </section>
+    <footer>
+      <p><a href="../chap04_CSS/survey2.html">설문조사</a></p>
+      <p style="text-shadow: 2px 2px 5px red">Copyright 2024 by 홍길동</p>
+    </footer>
+    <script>
+      function changeFrame(url, frameName) {
+        document.getElementsByName(frameName)[0].src = url;
+      }
+    </script>
   </body>
 </html>
