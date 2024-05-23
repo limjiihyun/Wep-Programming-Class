@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function paragraph_over() {
+        paragraph.innerText = "안녕하세요^^ 반가워요.";
+        paragraph.style.color = "Red";
+    }
+    function paragraph_out() {
+        paragraph.innerText = "마우스를여기에위치해보세요.";
+        paragraph.style.color = "Black";
+    }
+</script>
+
+<body>
+    <p id=paragraph onmouseover=paragraph_over() onmouseout=paragraph_out()>
+        마우스를여기에위치해보세요.
+    </p>
+</body>
+
+</html>
