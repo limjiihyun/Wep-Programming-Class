@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function calculate() {
+        let exp1 = document.getElementById("exp1");
+        let exp2 = document.getElementById("exp2");
+        let myList = document.getElementById("myList");
+        let result = document.getElementById("result");
+        try {
+            result.value = eval(exp1.value + myList.value + exp2.value);
+        } catch {
+            result.value = "Error";
+        }
+    }
+</script>
+</head>
+
+<body>
+    <div id="calc-container">
+        <h3>계산기</h3>
+        <input type="text" id="exp1" value="">
+        <select id="myList">
+            <option value="+">+</option>
+            <option value="=">=</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" id="exp2">
+        <input type="button" value="=" onClick="calculate()" class="button">
+        <input type="text" id="result" readonly>
+
+    </div>
+</body>
+
+</html>

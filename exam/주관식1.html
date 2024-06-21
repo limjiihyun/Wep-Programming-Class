@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function promptForDate() {
+        let userInput = 0;
+        let count = 0;
+
+        while (true) {
+            userInput = prompt("몇 까지 3의 배수를 찾을까요?");
+
+            parsedNumber = parseInt(userInput);
+
+            if (isFinite(parsedNumber)) {
+                alert(`입력한 값 ${userInput}은(는) 유효한 숫자입니다.`);
+                for (let i = 1; i <= userInput; i++) {
+                    if (i % 3 == 0) {
+                        let third = document.getElementById("third");
+                        third.innerText = i;
+                        count++;
+                        console.log('gg', i);
+
+                    }
+                }
+                let sum = document.getElementById("sum");
+                sum.innerHTML = count;
+                break;
+            } else {
+                alert(`입력한 값 ${userInput}은(는) 유효한 숫자가 아닙니다. 다시 시도하세요.`);
+            }
+        }
+    }
+</script>
+</head>
+
+<body onload="promptForDate()">
+    <h3>3의 배수 찾기</h3>
+    <div id="third"></div>
+    <div id="userInput" style="color: red;"></div>
+    <span style="color: red;">까지의 3의 배수의 갯수: </span>
+    <span id="sum" style="color: red;"></span>
+</body>
+
+</html>

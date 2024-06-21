@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function done1() {
+        let mySpan = document.getElementById("mySpan1");
+        mySpan.style.color = "red";
+        let redLine1 = document.getElementById("redLine1");
+        redLine1.style.visibility = "visible";
+    }
+    function done2() {
+        let mySpan = document.getElementById("mySpan2");
+        mySpan.style.color = "red";
+        let redLine2 = document.getElementById("redLine2");
+        redLine2.style.visibility = "visible";
+    }
+    function done3() {
+        let mySpan = document.getElementById("mySpan3");
+        mySpan.style.color = "red";
+        let redLine3 = document.getElementById("redLine3");
+        redLine3.style.visibility = "visible";
+    }
+    function done4() {
+        let mySpan = document.getElementById("mySpan4");
+        mySpan.style.color = "red";
+        let redLine4 = document.getElementById("redLine4");
+        redLine4.style.visibility = "visible";
+    }
+    function done5() {
+        let mySpan = document.getElementById("mySpan5");
+        mySpan.style.color = "red";
+        let redLine5 = document.getElementById("redLine5");
+        redLine5.style.visibility = "visible";
+    }
+</script>
+
+<body>
+    <h3>할 일 목록</h3>
+    <div onclick="done1()">
+        <hr style="width: 70px; margin-top: 10px; float: left; visibility:hidden; position: fixed; border-color: red;"
+            id="redLine1" />
+        <span id="mySpan1">&check; 할 일 1</span>
+    </div>
+    <br />
+    <div onclick="done2()">
+        <hr style="width: 70px; margin-top: 10px; float: left; visibility:hidden; position: fixed; border-color: red;"
+            id="redLine2" />
+        <span id="mySpan2">&check; 할 일 2</span>
+    </div>
+    <br />
+    <div onclick="done3()">
+        <hr style="width: 70px; margin-top: 10px; float: left; visibility:hidden; position: fixed; border-color: red;"
+            id="redLine3" />
+        <span id="mySpan3">&check; 할 일 3</span>
+    </div>
+    <br />
+    <div onclick="done4()">
+        <hr style="width: 70px; margin-top: 10px; float: left; visibility:hidden; position: fixed; border-color: red;"
+            id="redLine4" />
+        <span id="mySpan4">&check; 할 일 4</span>
+    </div>
+    <br />
+    <div onclick="done5()">
+        <hr style="width: 70px; margin-top: 10px; float: left; visibility:hidden; position: fixed; border-color: red;"
+            id="redLine5" />
+        <span id="mySpan5">&check; 할 일 5</span>
+    </div>
+
+</body>
+
+</html>

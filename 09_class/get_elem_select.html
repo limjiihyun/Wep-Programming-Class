@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getValue() {
+            let selected, s;
+            selected = document.getElementById("myList").selectedIndex;
+            s = document.getElementById("myList").options[selected].value;
+            document.getElementById("result").value = s;
+        }
+    </script>
+    <select id="myList">
+        <option value="학생">학생</option>
+        <option value="직장인" SELECTED>직장인</option>
+        선택된항목의인덱스위치
+        option항목들의 배열
+        <option value="전문직">전문직</option>
+        <option value="무직">무직</option>
+    </select>
+    <input type="button" onClick="getValue()" value="클릭">
+    <input type="text" id="result" value="">
+</body>
+
+</html>

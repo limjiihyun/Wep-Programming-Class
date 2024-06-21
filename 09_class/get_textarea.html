@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getTextAreaValue() {
+            let s;
+            s = document.getElementById("textArea").value;
+            document.getElementById("result").value = s;
+        }
+    </script>
+    <TEXTAREAid="textArea" rows=5 cols=20>This is a TextArea.</TEXTAREA>
+        <input type="button" onClick="getTextAreaValue();" value="클릭">
+        <TEXTAREAid="result" rows=5 cols=20></TEXTAREA>
+</body>
+
+</html>

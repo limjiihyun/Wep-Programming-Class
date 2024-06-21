@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function promptForDate() {
+        let userInput = 0;
+        let count = 0;
+        let word = [];
+        let i = 0;
+
+        userInput = prompt("단어의 개수를 입력하세요.");
+        parsedNumber = parseInt(userInput);
+        while (i <= (userInput.length + 1)) {
+            word[i] = prompt("단어를 하나씩 입력하세요");
+            i++;
+            console.log('gd', word[1]);
+        }
+        let size = document.getElementById("size");
+        size.innerHTML = userInput;
+        let up = document.getElementById("up");
+        up.innerHTML = word.sort();
+        let down = document.getElementById("down");
+        down.innerHTML = word.reverse();
+    }
+</script>
+</head>
+
+<body onload="promptForDate()">
+    <span>배열의 크기: </span>
+    <span id="size">
+    </span>
+    <div>오름차순 정렬...</div><br>
+    <div>배열의 내용은: </div>
+    <div id="up"></div><br>
+    <div>내림차순 정렬...</div><br>
+    <div>배열의 내용은: </div>
+    <div id="down"></div>
+</body>
+
+</html>

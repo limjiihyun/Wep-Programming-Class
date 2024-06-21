@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="text1"></input>
+    <input type="button" id="button1" value="append" onclick="add_array();"></input>
+    <div id="result"></div>
+    <script>
+        let index = 0;
+        let array = Array();
+        function add_array() {
+            array[index] = document.getElementById("text1").value;
+            index++;
+            let str = "";
+            for (let i = 0; i < array.length; i++) {
+                str += "array[" + i + "] = " + array[i] + "<br/>";
+            }
+            document.getElementById("result").innerHTML = str;
+        }
+    </script>
+</body>
+
+</html>

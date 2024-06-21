@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function findChecked() {
+        let found = null;
+        let kcity = document.getElementsByName("city");
+        // name 속성이 city인 모든 라디오 버튼 요소들을 가져와 kcity에 저장
+        for (let i = 0; i < kcity.length; i++) {
+            if (kcity[i].checked == true)
+                found = kcity[i];
+        }
+        // kcity의 각 요소를 순회하기 위한 for문을 시작
+        // kcity.length는 kcity에 포함된 라디오 버튼의 개수
+        // 선택된 라디오 버튼을 'found'변수에 저장
+        if (found != null)
+            alert(found.value + "이선택되었음");
+        else
+            alert("선택된것이없음");
+    }
+</script>
+</head>
+
+<body>
+    <h3>버튼을클릭하면선택된라디오버튼의value를출력합니다.</h3>
+    <hr>
+    <form>
+        <input type="radio" name="city" value="seoul" checked>서울
+        <input type="radio" name="city" value="busan">부산
+        <input type="radio" name="city" value="chunchen">춘천
+        <input type="button" value="find checked" onclick="findChecked()">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .button {
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+    }
+
+    #calc-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    #operators {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 10px;
+    }
+</style>
+<script>
+    function appendToExp(value) {
+        let exp = document.getElementById("exp");
+        exp.value += value;
+    }
+
+    function clearExp() {
+        document.getElementById("exp").value = "";
+        document.getElementById("result").value = "";
+    }
+
+    function calculate() {
+        let exp = document.getElementById("exp");
+        let result = document.getElementById("result");
+        try {
+            result.value = eval(exp.value);
+        } catch {
+            result.value = "Error";
+        }
+    }
+</script>
+</head>
+
+<body>
+    <div id="calc-container">
+        <h3>계산기</h3>
+        <hr>
+        계산하고자 하는 수식을 입력하고 계산 버튼을 눌러봐요.
+        <br><br>
+        <form>
+            수식: <input type="text" id="exp" value=""><br>
+            값: <input type="text" id="result" readonly>
+        </form>
+        <div id="buttons">
+            <input type="button" value="1" onClick="appendToExp('1')" class="button">
+            <input type="button" value="2" onClick="appendToExp('2')" class="button">
+            <input type="button" value="3" onClick="appendToExp('3')" class="button">
+            <input type="button" value="4" onClick="appendToExp('4')" class="button">
+            <input type="button" value="5" onClick="appendToExp('5')" class="button">
+            <input type="button" value="6" onClick="appendToExp('6')" class="button">
+            <input type="button" value="7" onClick="appendToExp('7')" class="button">
+            <input type="button" value="8" onClick="appendToExp('8')" class="button">
+            <input type="button" value="9" onClick="appendToExp('9')" class="button">
+            <input type="button" value="0" onClick="appendToExp('0')" class="button">
+        </div>
+        <div id="operators">
+            <input type="button" value="+" onClick="appendToExp('+')" class="button">
+            <input type="button" value="-" onClick="appendToExp('-')" class="button">
+            <input type="button" value="*" onClick="appendToExp('*')" class="button">
+            <input type="button" value="/" onClick="appendToExp('/')" class="button">
+            <input type="button" value="back" onClick="clearExp()" class="button">
+        </div>
+        <br>
+        <input type="button" value="계산" onClick="calculate()" class="button">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let msg = "";
+        function test() {
+            try {
+                allert("Hello World!");
+            }
+            catch (error) {
+                msg = "다음과같은오류가발생하였음: " + error.message;
+                alert(msg);
+            }
+        }
+    </script>
+    <input type="button" value="try-catch 시험" onclick="test()" />
+</body>
+
+</html>
